@@ -6,14 +6,14 @@ We would like an animation of the process. At each unit of time, we want a strin
 
 The ​animate ​method will return an array of strings in which each successive element shows theoccupied locations at the next time unit. The first element of the return should show theoccupied locations at the initial instant (at time = 0) in the 'X', '.' format. The last element in thereturn should show the empty chamber at the first time that it becomes empty.
 
-##Conditions
+##Conditions##
 Class: Chamber(init) where init is a string
 Method: animate(speed), where speed is an integer, returns an array
 Ensure that the class only accepts the following:
 - speed will be between 1 and 10 inclusive- init will contain between 1 and 50 characters inclusive 
 - each character in init will be '.' or 'L' or'R'
 
-##Examples
+##Examples##
 0) Chamber("..R....").animate(2)
    
 Returns:["..X....","....X..","......X","......."]
