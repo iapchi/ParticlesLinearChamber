@@ -16,7 +16,7 @@ public class AnimateImpl {
     }
 
     public boolean checkSpeed(int i) throws InvalidSpeedException {
-        if (i < 0 || i > 10) {
+        if (i < 1 || i > 10) {
             JOptionPane.showMessageDialog(null, "Invalid Speed (1-10 allowed). Press OK to exit.");
             throw new InvalidSpeedException("Invalid Speed");
         }
